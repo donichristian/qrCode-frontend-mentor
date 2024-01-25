@@ -1,0 +1,87 @@
+/* Define root variables for color values */
+:root {
+    --white : hsl(0, 0%, 100%);
+    --light-gray :hsl(212, 45%, 89%);
+    --grayish-blue : hsl(220, 15%, 55%);
+    --dark-blue : hsl(218, 44%, 22%);
+}
+
+/* Apply box-sizing to all elements */
+* {
+    box-sizing: border-box;
+}
+
+/* Default styles for the body */
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--grayish-blue);
+    background-color: var(--light-gray);
+}
+
+/* Styles for the card class */
+.card {
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 100px auto;
+    box-shadow: 0px 0px 10px 0px #9a9a9a;
+}
+
+/* Styles for images within the card class */
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Styles for h1 elements within the card class */
+.card h1 {
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding: 0 20px;
+    color: var(--dark-blue);
+}
+
+/* Styles for p elements within the card class */
+.card p {
+    text-align: center;
+    color: darkgray;
+    font-size: 0.9rem;
+    font-weight: 400;
+    padding: 0 20px;
+}
+
+/* Styles for the attribution class */
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+/* Styles for links within the attribution class */
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* Media Queries for mobile */
+@media only screen and (max-width: 375px) {
+    /* Adjust card styles for mobile */
+    .card {
+        width: 90%;
+        margin: 50px auto;
+        height: auto;
+    }
+
+    /* Adjust h1 styles for mobile */
+    .card h1 {
+        font-size: 1rem;
+    }
+
+    /* Adjust p styles for mobile */
+    .card p {
+        font-size: 0.7rem;
+    }
+}
